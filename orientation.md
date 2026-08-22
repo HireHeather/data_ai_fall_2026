@@ -4,7 +4,9 @@ This document is dedicated to all things orientation so you can be successful us
 
 # Data & AI Kick-off 
 
-- [ ] Review the Data & AI Kick-off slide deck 
+<img width="1025" height="575" alt="Screenshot 2026-08-22 at 12 41 40 AM" src="https://github.com/user-attachments/assets/fc3f9e0c-7da1-4aaf-8a7f-1ce1e5efd359" />
+
+- [ ] Review the [Data & AI Kick-off](https://docs.google.com/presentation/d/1vD98GERP-Gt2VPRYblDgOxZBDnDAPiQ1ysnMfW8RFi4/edit?usp=sharing) slide deck 
 
 # Weber State University Micro-credentials 
 
