@@ -1,81 +1,108 @@
-# Module 1: Data & AI Foundations
+# Module 1.1: AI Foundations
+
+## Module Overview
+
+In this module, students will get hands-on with AI as a daily working tool rather than a search engine. Using Leland's AI Builder Foundations course, students will practice creating real outputs with AI (documents, visualizations, images), learn how to prompt effectively and give AI the right context, use AI to stay organized, and explore optional deep dives into AI security, honesty, and cost management.
+
+## Learning Objectives
+
+By the end of this module, students will:
+
+1. Use AI to create documents, spreadsheets, presentations, visualizations, and images
+2. Write effective prompts and recognize AI's different modes and output types
+3. Provide AI with context through document, image, and data uploads to improve results
+4. Use voice input and connected tools (like a calendar) to make AI part of a daily workflow
+5. (Optional) Apply best practices for AI security, including permissions and data classification
+6. (Optional) Maintain honesty and accountability when using AI-assisted output
+7. (Optional) Choose the right AI model for a task and manage AI costs intentionally
 
 ---
 
-## Video Lessons - complete by class Wednesday
+## Lessons - complete by class Wednesday
 
-_Watch the videos below, edit the markdown file with an x in the checkbox when complete, then commit changes._
+Join [Leland AI Builder Foundations](https://courses.joinleland.com/ai-builder/foundations).
 
-_Estimated **total** time to complete: 1 hour_
+*Work through the lessons below at your own pace. Edit this file & mark the checkbox when a task is complete, then commit changes.*
 
-----
-
-<a href="https://www.youtube.com/watch?v=KHbwOetbmbs" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/c24f1ca4-42fc-463d-a0af-f6c5f6c3901e" alt="Machine Learning" width="500">
-</a>
-
-In this section, you will learn about Machine Learning. Machine Learning is a subset of AI that uses data to train algorithms to make predictions or identify patterns. Examples of ML applications: fraud detection, recommendation systems, predictive analytics.   
-
-- [ ] Watch [video](https://www.youtube.com/watch?v=KHbwOetbmbs) and mark when complete
-
-----
-
-<a href="https://www.youtube.com/watch?v=x2mRoFNm22g" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/73c50356-0276-4962-8447-2a25068b13f3" alt="AI Bias" width="500">
-</a>
-
-The most important aspect of Machine Learning is what data is used to train it. Find out how training data affects a machine's predictions and why biased data can lead to biased decisions.
-
-- [ ] Watch [video](https://www.youtube.com/watch?v=x2mRoFNm22g) and mark when complete 
-
-____
-
-<a href="https://youtu.be/2hXG8v8p0KM?si=xRzLfuWd2h-MIT4Z" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/0d5ec53d-07b2-466b-8a88-6fd4d087ba4b" alt="Computer Vision" width="500">
-</a>
-
-Computer Vision is a form of machine learning used in self-driving cars, facial recognition systems, and sustainable farming. Find out how a computer learns to classify images, how it can build from simple shapes to more complex figures, and why it’s so difficult for a computer to tell the difference between a chihuahua and a muffin.
-
-- [ ] Watch [video](https://youtu.be/2hXG8v8p0KM?si=xRzLfuWd2h-MIT4Z) and mark when complete 
+*Estimated **total** time to complete: 4 hours*
 
 ---
 
-<a href="https://youtu.be/JrXazCEACVo?si=Y5zIpQhELv2jP5J1" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/f9566911-2152-408f-aa67-6ab76718629d" alt="NN" width="500">
-</a>
+### Lesson 01: Discover What AI Is Capable Of
 
-In this section, you'll learn about neural networks. Neural networks are computational models inspired by the human brain, consisting of layers of interconnected nodes (neurons) that process input data by assigning weights, applying activation functions, and adjusting through training to minimize errors. They learn patterns and make predictions by iteratively updating these weights using algorithms like backpropagation, improving their accuracy over time.
+Explore the different output types AI can create — from documents and spreadsheets to visualizations and images.
 
-- [ ] Watch [video](https://youtu.be/JrXazCEACVo?si=Y5zIpQhELv2jP5J1) and mark when complete 
+- [ ] Create documents, spreadsheets, and presentations with AI
+- [ ] Create interactive visualizations and artifacts with AI
+- [ ] Create images with AI
+- [ ] Explore more types of AI output
 
-----
+---
 
-<a href="https://youtu.be/X-AWdfSFCHQ?si=Ne98iYq1SOFo-QN_" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/d1346218-715e-4369-b120-30d399dc68ac" alt="Chatbots" width="500">
-</a>
+### Lesson 02: Make AI Useful Today
 
-Large Language Models like ChatGPT have remarkable abilities to generate content based on training data but do they have actual intelligence? Find out more about how LLM's and Chatbots work as we explore this question. 
+Understand how AI works and build the muscle to use it as more than a search engine.
 
-- [ ] Watch [video](https://youtu.be/X-AWdfSFCHQ?si=Ne98iYq1SOFo-QN_) and mark when complete 
+- [ ] Write a great research prompt
+- [ ] Run a task through AI's different modes
+- [ ] Map where AI can help you in your work and life
 
-----
+---
 
-<a href="https://youtu.be/X994dDnmRmY?si=OGQI3LMl2gYbkFR1" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/ddc30c35-2ad4-43b9-80b7-eee17ad7f7e4" alt="AIart" width="500">
-</a>
+### Lesson 03: Leverage the Power of Context
 
-AI has the amazing capability to generate art, images and even complete video sequences but does it have actual creativity and imagination? And how does this type of AI work? Learn more about how AI is able to generate art including images we've never seen.
+Learn to give AI the right context and the right tool for each job, then make something real with it.
 
-- [ ] Watch [video](https://youtu.be/X994dDnmRmY?si=OGQI3LMl2gYbkFR1) and mark when complete 
+- [ ] Start using voice input
+- [ ] Give AI context through document uploads
+- [ ] Work with image and data uploads
 
-----
+---
 
-<a href="https://www.youtube.com/watch?v=tJQSyzBUAew" target="_blank" rel="noopener noreferrer">
-    <img src="https://github.com/user-attachments/assets/88f8e1ba-8b18-4fc1-b495-aaf369f07b6b" alt="Ethics" width="500">
-</a>
+### Lesson 04: Use AI to Stay Organized
 
-The potential for AI to help society is enormous. But at the same time we need to develop technology with a focus on ethics, access and fairness. This video explores the influence of AI on every aspect of life and underscores the importance of ethical oversight to prevent the creation of biased AI algorithms. 
+Plan your days, sort your priorities out loud, and hand one recurring personal task to AI.
 
-- [ ] Watch [video](https://www.youtube.com/watch?v=tJQSyzBUAew) and mark when complete 
+- [ ] Connect your calendar
+- [ ] Plan your day with AI
+- [ ] Sort your to-do list by talking it through
+- [ ] Share what you built and learn from others
 
-----
+---
+
+## Optional Deep Dives
+
+*Extra lessons you can complete any time. No need to wait for the core lessons above.*
+
+---
+
+### Lesson 05 (Optional): Best Practices for AI Security
+
+Learn how to use AI securely so you can keep sensitive info safe.
+
+- [ ] Work safely within your company's constraints
+- [ ] Manage permissions and access
+- [ ] Classify your data before you use it
+- [ ] Sanitize your inputs
+
+---
+
+### Lesson 06 (Optional): Honesty with AI
+
+Stay accurate and accountable in everything AI helps you make.
+
+- [ ] Use AI honestly
+- [ ] Fact-check AI outputs
+
+---
+
+### Lesson 07 (Optional): Managing Your AI Costs
+
+Pick the right model for each job and budget your AI spend with intent.
+
+- [ ] Pick the right model for each job
+- [ ] Budget your AI spend with intent
+
+---
+
+*Source: [Leland AI Builder Foundations](https://courses.joinleland.com/ai-builder/foundations)*
