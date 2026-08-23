@@ -105,4 +105,9 @@ Pick the right model for each job and budget your AI spend with intent.
 
 ---
 
-*Source: [Leland AI Builder Foundations](https://courses.joinleland.com/ai-builder/foundations)*
+## Additional Assignments: 
+
+- [ ] Review the Data Analytics Resource repository
+- [ ] Add teachers & fellow students on linkedin
+- [ ] Continue editing your Claude Artifact from Saturday's class via prompts or VSCode and Publish on GitHub as a GitHub page (ask AI for help as needed!) 
+
