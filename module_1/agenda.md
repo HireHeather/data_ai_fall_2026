@@ -1,6 +1,4 @@
-# Agenda - Wednesday, August 26th, 2026 
-
-## 📋 Class Agenda
+## 📋 Class Agenda - Wednesday, August 26th, 2026 
 
 - 👋 **Welcome** (5 mins)
 - 🤝 **Network** (10 mins – 2 mins each)
