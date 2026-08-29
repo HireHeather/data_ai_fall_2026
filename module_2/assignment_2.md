@@ -1,4 +1,4 @@
-# Bonus Assignment #2: Net Worth Spreadsheet 
+# Assignment #2: Net Worth Spreadsheet 
 
 ![Screenshot 2025-01-25 at 12 03 58 AM](https://github.com/user-attachments/assets/b9e7b12f-f9b5-46f5-9e7e-4dbab8271a60)
 
