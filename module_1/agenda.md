@@ -35,7 +35,7 @@
 
 - **💻 Zoom Breakout Activity: "AI Spending Analyst"** (20 min)
   - Break students into small groups (breakout rooms, 3–4 per room)
-  - Give each group a sample spending dataset (a simple CSV or list of transactions — e.g. a month of mock credit card charges by category)
+  - Give each group a [sample spending dataset](https://docs.google.com/spreadsheets/d/196NCcQrv0lPIU-42aedIGv7Qojh2hbf0lShj7hh4ntI/edit?gid=2026292206#gid=2026292206) (a simple CSV or list of transactions — e.g. a month of mock credit card charges by category)
   - **✏️ Step 1 — By hand:** group manually calculates mean, median, and mode of the spending amounts
   - **🤖 Step 2 — With AI:** group pastes the same data into ChatGPT/Claude/Gemini and asks it to calculate mean, median, mode, and analyze spending patterns
   - As a team, they answer using the chat or a shared Google Doc:
