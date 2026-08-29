@@ -8,7 +8,7 @@ This assignment is designed to help you gain insight into your personal spending
 ## Instructions
 
 ### 1. Collect Your Data
-- Gather your bank and credit card statements from the past 12 months.
+- Gather your bank and credit card statements from the past 3 (up to 12) months.
 - Download them in a format that can be imported into Excel or Google Sheets (e.g., `.CSV` or `.XLSX` files).
 
 ### 2. Categorize Transactions
@@ -36,15 +36,16 @@ Some suggestions:
   - Are there months where you consistently spend more?
   - Are there categories where your spending is higher than expected?
   - What surprises you, if anything?
-  - What is your average monthly spending in each category? 
+  - What is your average monthly spending in each category?
+  - Make a dashboard
 
 ### 6. Reflect and Document
 - Write a short reflection on your findings:
   - What changes (if any) would you like to make to your spending habits?
   - How has this exercise helped you understand your financial behavior better?
 
-### 7. (Optional) Share Your Takeaways
-- Share your insights with someone you trust, such as a partner or friend.
+### 7. Share Your Takeaways
+- Share your insights here: https://github.com/Tech-Moms/data_ai_fall_2026/discussions/8
 - If you're feeling bold, consider posting your key takeaways on LinkedIn to inspire others (e.g., lessons learned, surprising trends, or tools you used).
 
 ---
