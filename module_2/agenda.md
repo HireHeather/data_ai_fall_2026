@@ -18,3 +18,24 @@
 - 💸 **Assignment Overview** OR breakout groups for folks that still need to finish Module 1. 
 - 💻 **If time - Hands On Activity**
 - ✅ **Wrap Up & Questions** (last 10 mins)
+
+## 📋 Class Agenda - Saturday, September 5nd, 2026 
+
+- 👋 **Welcome**
+- **[Spreadsheet Quiz](https://claude.ai/public/artifacts/8a89bd93-19a9-4eb8-b9a7-b650da2c6228)**
+- 🧹 **Housekeeping**
+   - Change of schedule
+   - Using Projects in Claude, ChatGPT, and Gemini
+   - Congrats, Ashleigh! 🎉
+- **Assignment Review**
+   - How did the assignment go?
+   - How comfortable do you feel using spreadsheets to analyze data?
+- **Analysis Concepts**
+   - Growth rate, % of total, and other key metrics
+   - How to think like an analyst
+   - How can you automate your finances going forward?
+- **Hands-On Activity**
+   - Using AI to analyze spending data
+-  **Look Ahead: Module 3**
+-  **Bonus Assignments**
+-  **Guest Speaker: Alyson La**
