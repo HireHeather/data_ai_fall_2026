@@ -94,6 +94,147 @@ LEFT JOIN second_table
   ON first_table.shared_column = second_table.shared_column;
 ```
 
+## 🍎 More Examples: Starting From `patients`
+ 
+Every example below starts with **all the patients**, then adds info from another table. Run them on sql-practice.com and see what you get! 👀
+ 
+### 1️⃣ Patients from Hamilton, with their province name
+*Adding a `WHERE` filter works just like normal!*
+ 
+```sql
+SELECT patients.first_name, patients.last_name, patients.city, province_names.province_name
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+WHERE patients.city = 'Hamilton';
+```
+ 
+### 2️⃣ Patients with allergies, sorted by province
+*You can `ORDER BY` a column from either table.*
+ 
+```sql
+SELECT patients.first_name, patients.allergies, province_names.province_name
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+WHERE patients.allergies IS NOT NULL
+ORDER BY province_names.province_name;
+```
+ 
+### 3️⃣ Patients with their hospital visits
+*This time we join to `admissions` using `patient_id`.*
+ 
+```sql
+SELECT patients.first_name, patients.last_name, admissions.admission_date, admissions.diagnosis
+FROM patients
+LEFT JOIN admissions
+  ON patients.patient_id = admissions.patient_id;
+```
+ 
+👀 **Notice two things:**
+- Some patients show up **more than once**. They visited the hospital more than once!
+- Some patients have **`NULL`** for the date and diagnosis. They've never been admitted, but LEFT JOIN still keeps them. 💜
+### 4️⃣ Patients who have NEVER been admitted
+*This is a LEFT JOIN superpower! Look for the `NULL`s.* 🦸‍♀️
+ 
+```sql
+SELECT patients.first_name, patients.last_name
+FROM patients
+LEFT JOIN admissions
+  ON patients.patient_id = admissions.patient_id
+WHERE admissions.patient_id IS NULL;
+```
+ 
+### 5️⃣ How many times each patient was admitted
+*LEFT JOIN + `GROUP BY` + `COUNT`*
+ 
+```sql
+SELECT patients.first_name, patients.last_name, COUNT(admissions.patient_id) AS total_visits
+FROM patients
+LEFT JOIN admissions
+  ON patients.patient_id = admissions.patient_id
+GROUP BY patients.patient_id, patients.first_name, patients.last_name
+ORDER BY total_visits DESC;
+```
+ 
+💡 We count `admissions.patient_id` (not `*`) so patients who were never admitted get **0** instead of 1.
+ 
+### 6️⃣ The 5 tallest patients and where they live
+*LEFT JOIN + `ORDER BY` + `LIMIT`*
+ 
+```sql
+SELECT patients.first_name, patients.last_name, patients.height, province_names.province_name
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+ORDER BY patients.height DESC
+LIMIT 5;
+```
+ 
+### 7️⃣ Patients born in 2000 or later, with their province
+*Filtering on a date works too!*
+ 
+```sql
+SELECT patients.first_name, patients.birth_date, province_names.province_name
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+WHERE patients.birth_date >= '2000-01-01'
+ORDER BY patients.birth_date;
+```
+ 
+### 8️⃣ How many patients live in each province
+*`GROUP BY` the full province name instead of the code.*
+ 
+```sql
+SELECT province_names.province_name, COUNT(patients.patient_id) AS total_patients
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+GROUP BY province_names.province_name
+ORDER BY total_patients DESC;
+```
+ 
+### 9️⃣ Average height and weight by province
+*Use `AVG` with a JOIN. `ROUND` keeps the numbers tidy.*
+ 
+```sql
+SELECT province_names.province_name,
+       ROUND(AVG(patients.height), 1) AS avg_height,
+       ROUND(AVG(patients.weight), 1) AS avg_weight
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+GROUP BY province_names.province_name;
+```
+ 
+### 🔟 Each patient's most recent hospital visit
+*`MAX` on a date gives you the latest one.*
+ 
+```sql
+SELECT patients.first_name, patients.last_name, MAX(admissions.admission_date) AS last_visit
+FROM patients
+LEFT JOIN admissions
+  ON patients.patient_id = admissions.patient_id
+GROUP BY patients.patient_id, patients.first_name, patients.last_name
+ORDER BY last_visit DESC;
+```
+ 
+💡 Patients who were never admitted will have a `NULL` last visit.
+ 
+### 🌟 Stretch: Patients, their visits, AND their doctor
+*You can chain LEFT JOINs! Patients ➡️ admissions ➡️ doctors*
+ 
+```sql
+SELECT patients.first_name, admissions.diagnosis, doctors.last_name AS doctor
+FROM patients
+LEFT JOIN admissions
+  ON patients.patient_id = admissions.patient_id
+LEFT JOIN doctors
+  ON admissions.attending_doctor_id = doctors.doctor_id;
+```
+ 
+
 ## 🏋️ Your turn! (on sql-practice.com)
 
 **1.** Show each patient's first name with their admission date.
@@ -109,123 +250,20 @@ LEFT JOIN admissions
 ```
 </details>
 
----
-
-## 🧩 Bonus: The 4 Types of JOINs
-
-So far everyone matched. But what if they **don't** all match? 🤔
-
-Let's use three real patients, and **imagine** a smaller `province_names` table that's missing Nova Scotia and has British Columbia instead:
-
-**`patients`** (left table ⬅️)
-
-| first_name | province_id |
-|---|---|
-| Donald | ON |
-| Mickey | ON |
-| Sonny | NS |
-
-**`province_names`** (right table ➡️, pretend version)
-
-| province_id | province_name |
-|---|---|
-| ON | Ontario |
-| BC | British Columbia |
-
-👀 Notice: **Sonny's** province (NS) isn't in the right table. **BC** has no patients.
-
-> 💡 **Party analogy:** The left table is **your** guest list. The right table is **your friend's** guest list. Each JOIN is a different way to decide who gets invited! 🎉
-
-### 🤝 INNER JOIN: only matches on BOTH sides
-
+**2.** Show the first name, last name, and city of every patient who lives in **Nova Scotia**. Use the full province name, not `NS`!
+*Hint: LEFT JOIN `province_names`, then filter with `WHERE`.*
+ 
+<details><summary>Answer</summary>
+  
 ```sql
-SELECT * FROM patients
-INNER JOIN province_names ON patients.province_id = province_names.province_id;
+SELECT patients.first_name, patients.last_name, patients.city
+FROM patients
+LEFT JOIN province_names
+  ON patients.province_id = province_names.province_id
+WHERE province_names.province_name = 'Nova Scotia';
 ```
-
-| first_name | province_id | province_name |
-|---|---|---|
-| Donald | ON | Ontario |
-| Mickey | ON | Ontario |
-
-Sonny and BC are left out. ❌
-
-### ⬅️ LEFT JOIN: everyone on the LEFT ⭐ (our go-to!)
-
-```sql
-SELECT * FROM patients
-LEFT JOIN province_names ON patients.province_id = province_names.province_id;
-```
-
-| first_name | province_id | province_name |
-|---|---|---|
-| Donald | ON | Ontario |
-| Mickey | ON | Ontario |
-| Sonny | NS | *NULL* |
-
-Sonny stays! No match, so his province name is blank (`NULL`).
-
-### ➡️ RIGHT JOIN: everyone on the RIGHT
-
-```sql
-SELECT * FROM patients
-RIGHT JOIN province_names ON patients.province_id = province_names.province_id;
-```
-
-| first_name | province_id | province_name |
-|---|---|---|
-| Donald | ON | Ontario |
-| Mickey | ON | Ontario |
-| *NULL* | BC | British Columbia |
-
-BC stays! No patient, so the name is blank.
-
-### 🌍 FULL OUTER JOIN: EVERYONE from both sides
-
-```sql
-SELECT * FROM patients
-FULL OUTER JOIN province_names ON patients.province_id = province_names.province_id;
-```
-
-| first_name | province_id | province_name |
-|---|---|---|
-| Donald | ON | Ontario |
-| Mickey | ON | Ontario |
-| Sonny | NS | *NULL* |
-| *NULL* | BC | British Columbia |
-
-Nobody gets left out! 🥳
-
-*(To keep things simple, these results show `province_id` just once.)*
-
-### 🧠 Quick comparison
-
-| JOIN type | Who's included? |
-|---|---|
-| 🤝 **INNER** | Only matches on both sides |
-| ⬅️ **LEFT** | Everything from the left + matches |
-| ➡️ **RIGHT** | Everything from the right + matches |
-| 🌍 **FULL OUTER** | Everything from both sides |
-
-> 💡 **Real talk:** **LEFT JOIN** is your go-to! You'll see INNER JOIN in other people's code, so it's good to recognize. RIGHT JOIN is just a LEFT JOIN with the tables flipped, so you rarely need it.
+</details>
 
 ---
 
-## 📝 Remember this pattern
 
-```sql
-SELECT columns
-FROM first_table
-LEFT JOIN second_table
-  ON first_table.shared_column = second_table.shared_column;
-```
-
-✅ **LEFT JOIN** = start with your main table and add info from another
-✅ **ON** = tell SQL which column matches
-✅ Don't forget the **ON** part!
-✅ **INNER** = matches only, **LEFT** = all of the left, **RIGHT** = all of the right, **FULL OUTER** = everything
-
-✅ **JOIN** = combine two tables
-✅ **ON** = tell SQL which column matches
-✅ Don't forget the **ON** part!
-✅ **INNER** = matches only, **LEFT** = all of the left, **RIGHT** = all of the right, **FULL OUTER** = everything
