@@ -85,25 +85,18 @@ LEFT JOIN province_names
 
 ---
 
-## 🏋️ Your turn! (on sql-practice.com)
-
-**1.** Show each patient's first name, last name, and full province name.
-*Hint: it's the query right above. Type it yourself!* ✍️
-
-**2.** Show each admission's diagnosis with the doctor's last name.
-*Hint: join `admissions` and `doctors`. The matching columns have different names: `attending_doctor_id` and `doctor_id`.*
-
-<details><summary>Answer</summary>
+## 📝 Remember this pattern
 
 ```sql
-SELECT admissions.diagnosis, doctors.last_name
-FROM admissions
-LEFT JOIN doctors
-  ON admissions.attending_doctor_id = doctors.doctor_id;
+SELECT columns
+FROM first_table
+LEFT JOIN second_table
+  ON first_table.shared_column = second_table.shared_column;
 ```
-</details>
 
-**3.** Show each patient's first name with their admission date.
+## 🏋️ Your turn! (on sql-practice.com)
+
+**1.** Show each patient's first name with their admission date.
 *Hint: join `patients` and `admissions` on `patient_id`.*
 
 <details><summary>Answer</summary>
