@@ -48,7 +48,7 @@ _Est. Time to Complete: 8 mins_
 
 The `WHERE` clause in SQL is used to filter records in a query based on specified conditions. It allows you to retrieve only the rows that meet certain criteria, making your data more precise and relevant. For example, `SELECT * FROM employees WHERE department = 'Sales';` retrieves only the rows where the department is "Sales." The `WHERE` clause can use operators like `=`, `>`, `<`, `LIKE`, and `IN` to define the conditions, making it a powerful tool for refining queries and focusing on specific data subsets.
 
-- [x] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=3A8UCUkLOgGKQ3R_&t=1857) video and mark when complete
+- [ ] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=3A8UCUkLOgGKQ3R_&t=1857) video and mark when complete
 
 ---
 
@@ -60,27 +60,27 @@ In SQL, the `GROUP BY` and `ORDER BY` clauses are used to organize and sort data
 
 The `ORDER BY` clause sorts the query results based on specified columns, either in ascending (`ASC`) or descending (`DESC`) order. For example, `ORDER BY salary DESC` will sort the results by salary from highest to lowest. These clauses help in organizing data for clearer insights and analysis.
 
-- [x] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=vu1ueCAeZ9jVLMhT&t=2334) video and mark when complete
+- [ ] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=vu1ueCAeZ9jVLMhT&t=2334) video and mark when complete
 
 ## Optional: Intermediate SQL Video Tutorials 
 
 _Estimated time to complete: 1.5 hours_
 
-- [x] Watch [this video series](https://www.youtube.com/playlist?list=PLUaB-1hjhk8G5zci4HA8E21x2BJS3jzNm) by Alex the Analyst about Intermediate SQL 
+- [ ] Watch [this video series](https://www.youtube.com/playlist?list=PLUaB-1hjhk8G5zci4HA8E21x2BJS3jzNm) by Alex the Analyst about Intermediate SQL 
 
 ## Hands-On Practice:  
 
 _Estimated time to complete: 2 hours_
 
-- [x] Pick [a SQL resource](https://github.com/KelseyATaylor/Data-Tech-Moms-Resources?tab=readme-ov-file#sql) to do 2 hours of hands SQL practice 
+- [ ] Pick [a SQL resource](https://github.com/KelseyATaylor/Data-Tech-Moms-Resources?tab=readme-ov-file#sql) to do 2 hours of hands SQL practice 
 
 Additional resources: 
 
-- [x] Complete this [Learn SQL: Aggregate Functions](https://www.codecademy.com/learn/learn-sql-aggregate-functions) course and mark when done
-- [x] Complete this [Learn AI for SQL](https://www.codecademy.com/learn/learn-ai-for-sql) course and mark when done
+- [ ] Complete this [Learn SQL: Aggregate Functions](https://www.codecademy.com/learn/learn-sql-aggregate-functions) course and mark when done
+- [ ] Complete this [Learn AI for SQL](https://www.codecademy.com/learn/learn-ai-for-sql) course and mark when done
 
 # Assignment: 
 
 _Estimated time to complete: 6 hours_
 
-- [x] Complete the SQL assignment [here](https://github.com/Tech-Moms/data_ai_fall_2026/blob/main/module_4/assignment.md) and drop in your completed project in [this discussion](https://github.com/Tech-Moms/data_ai_fall_2026/discussions/39). 
+- [ ] Complete the SQL assignment [here](https://github.com/Tech-Moms/data_ai_fall_2026/blob/main/module_4/assignment.md) and drop in your completed project in [this discussion](https://github.com/Tech-Moms/data_ai_fall_2026/discussions/39). 
