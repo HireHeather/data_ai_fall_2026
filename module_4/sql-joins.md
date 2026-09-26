@@ -9,7 +9,7 @@ Learn how to combine **two tables** into one result. That's it!
 
 ## 🤔 The problem
 
-Here's a tiny slice of two hospital tables. *(The names are made up to keep it simple.)*
+Here are the first few rows of the real `patients` table on sql-practice.com:
 
 **`patients`**
 
@@ -27,7 +27,7 @@ Here's a tiny slice of two hospital tables. *(The names are made up to keep it s
 | ON | Ontario |
 | NS | Nova Scotia |
 
-❓ **What province does Ben live in?**
+❓ **What province does Sonny live in?**
 
 The `patients` table only says **NS**. The full name is in the other table. We need to **join** them! 🙌
 
@@ -41,30 +41,33 @@ Both tables have a **`province_id`** column. That's how SQL matches the rows up.
 
 ---
 
-## 🤝 Your first JOIN
+## ⬅️ Your first JOIN: LEFT JOIN
 
 ```sql
 SELECT *
 FROM patients
-JOIN province_names
+LEFT JOIN province_names
   ON patients.province_id = province_names.province_id;
 ```
 
 **Result:**
 
-| first_name | province_id | province_name |
-|---|---|---|
-| Anna | ON | Ontario |
-| Ben | NS | Nova Scotia |
-| Cara | ON | Ontario |
+| patient_id | first_name | last_name | city | province_id | province_name |
+|---|---|---|---|---|---|
+| 1 | Donald | Waterfield | Barrie | ON | Ontario |
+| 2 | Mickey | Baasha | Dundas | ON | Ontario |
+| 3 | Jiji | Sharma | Hamilton | ON | Ontario |
+| 8 | Sonny | Beckett | Port Hawkesbury | NS | Nova Scotia |
 
 🎉 Now everything is in one place!
+
+> 💜 **Why LEFT JOIN?** It's the JOIN I use every day. It keeps **every row** from your first table, so nothing disappears by accident. Start with your main table, then add the extra info.
 
 ### 🗣️ Read it like a sentence
 | SQL | In plain English |
 |---|---|
 | `FROM patients` | Start with the patients table |
-| `JOIN province_names` | Bring in the province names table |
+| `LEFT JOIN province_names` | Keep **every** patient, and bring in their province name |
 | `ON patients.province_id = province_names.province_id` | Match rows where the province IDs are the same |
 
 ---
@@ -76,7 +79,7 @@ Instead of `*`, name the columns. Put the **table name + a dot** in front so SQL
 ```sql
 SELECT patients.first_name, patients.last_name, province_names.province_name
 FROM patients
-JOIN province_names
+LEFT JOIN province_names
   ON patients.province_id = province_names.province_id;
 ```
 
@@ -95,7 +98,7 @@ JOIN province_names
 ```sql
 SELECT admissions.diagnosis, doctors.last_name
 FROM admissions
-JOIN doctors
+LEFT JOIN doctors
   ON admissions.attending_doctor_id = doctors.doctor_id;
 ```
 </details>
@@ -108,7 +111,7 @@ JOIN doctors
 ```sql
 SELECT patients.first_name, admissions.admission_date
 FROM patients
-JOIN admissions
+LEFT JOIN admissions
   ON patients.patient_id = admissions.patient_id;
 ```
 </details>
@@ -119,23 +122,24 @@ JOIN admissions
 
 So far everyone matched. But what if they **don't** all match? 🤔
 
+Let's use three real patients, and **imagine** a smaller `province_names` table that's missing Nova Scotia and has British Columbia instead:
+
 **`patients`** (left table ⬅️)
 
 | first_name | province_id |
 |---|---|
-| Anna | ON |
-| Ben | NS |
-| Cara | ZZ |
+| Donald | ON |
+| Mickey | ON |
+| Sonny | NS |
 
-**`province_names`** (right table ➡️)
+**`province_names`** (right table ➡️, pretend version)
 
 | province_id | province_name |
 |---|---|
 | ON | Ontario |
-| NS | Nova Scotia |
 | BC | British Columbia |
 
-👀 Notice: **Cara's** province (ZZ) isn't in the right table. **BC** has no patients.
+👀 Notice: **Sonny's** province (NS) isn't in the right table. **BC** has no patients.
 
 > 💡 **Party analogy:** The left table is **your** guest list. The right table is **your friend's** guest list. Each JOIN is a different way to decide who gets invited! 🎉
 
@@ -148,12 +152,12 @@ INNER JOIN province_names ON patients.province_id = province_names.province_id;
 
 | first_name | province_id | province_name |
 |---|---|---|
-| Anna | ON | Ontario |
-| Ben | NS | Nova Scotia |
+| Donald | ON | Ontario |
+| Mickey | ON | Ontario |
 
-Cara and BC are left out. ❌
+Sonny and BC are left out. ❌
 
-### ⬅️ LEFT JOIN: everyone on the LEFT
+### ⬅️ LEFT JOIN: everyone on the LEFT ⭐ (our go-to!)
 
 ```sql
 SELECT * FROM patients
@@ -162,11 +166,11 @@ LEFT JOIN province_names ON patients.province_id = province_names.province_id;
 
 | first_name | province_id | province_name |
 |---|---|---|
-| Anna | ON | Ontario |
-| Ben | NS | Nova Scotia |
-| Cara | ZZ | *NULL* |
+| Donald | ON | Ontario |
+| Mickey | ON | Ontario |
+| Sonny | NS | *NULL* |
 
-Cara stays! No match, so her province name is blank (`NULL`).
+Sonny stays! No match, so his province name is blank (`NULL`).
 
 ### ➡️ RIGHT JOIN: everyone on the RIGHT
 
@@ -177,8 +181,8 @@ RIGHT JOIN province_names ON patients.province_id = province_names.province_id;
 
 | first_name | province_id | province_name |
 |---|---|---|
-| Anna | ON | Ontario |
-| Ben | NS | Nova Scotia |
+| Donald | ON | Ontario |
+| Mickey | ON | Ontario |
 | *NULL* | BC | British Columbia |
 
 BC stays! No patient, so the name is blank.
@@ -192,9 +196,9 @@ FULL OUTER JOIN province_names ON patients.province_id = province_names.province
 
 | first_name | province_id | province_name |
 |---|---|---|
-| Anna | ON | Ontario |
-| Ben | NS | Nova Scotia |
-| Cara | ZZ | *NULL* |
+| Donald | ON | Ontario |
+| Mickey | ON | Ontario |
+| Sonny | NS | *NULL* |
 | *NULL* | BC | British Columbia |
 
 Nobody gets left out! 🥳
@@ -210,7 +214,7 @@ Nobody gets left out! 🥳
 | ➡️ **RIGHT** | Everything from the right + matches |
 | 🌍 **FULL OUTER** | Everything from both sides |
 
-> 💡 **Real talk:** Most people use **INNER** and **LEFT** almost all the time. RIGHT JOIN is just a LEFT JOIN with the tables flipped!
+> 💡 **Real talk:** **LEFT JOIN** is your go-to! You'll see INNER JOIN in other people's code, so it's good to recognize. RIGHT JOIN is just a LEFT JOIN with the tables flipped, so you rarely need it.
 
 ---
 
@@ -219,9 +223,14 @@ Nobody gets left out! 🥳
 ```sql
 SELECT columns
 FROM first_table
-JOIN second_table
+LEFT JOIN second_table
   ON first_table.shared_column = second_table.shared_column;
 ```
+
+✅ **LEFT JOIN** = start with your main table and add info from another
+✅ **ON** = tell SQL which column matches
+✅ Don't forget the **ON** part!
+✅ **INNER** = matches only, **LEFT** = all of the left, **RIGHT** = all of the right, **FULL OUTER** = everything
 
 ✅ **JOIN** = combine two tables
 ✅ **ON** = tell SQL which column matches
