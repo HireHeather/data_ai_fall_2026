@@ -13,11 +13,12 @@ Here's a tiny slice of two hospital tables. *(The names are made up to keep it s
 
 **`patients`**
 
-| first_name | province_id |
-|---|---|
-| Anna | ON |
-| Ben | NS |
-| Cara | ON |
+| patient_id | first_name | last_name | city | province_id |
+|---|---|---|---|---|
+| 1 | Donald | Waterfield | Barrie | ON |
+| 2 | Mickey | Baasha | Dundas | ON |
+| 3 | Jiji | Sharma | Hamilton | ON |
+| 8 | Sonny | Beckett | Port Hawkesbury | NS |
 
 **`province_names`**
 
