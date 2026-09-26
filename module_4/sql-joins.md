@@ -27,7 +27,7 @@ Here are the first few rows of the real `patients` table on sql-practice.com:
 | ON | Ontario |
 | NS | Nova Scotia |
 
-❓ **What province does Sonny live in?**
+❓ **What is the full province name where Sonny lives?**
 
 The `patients` table only says **NS**. The full name is in the other table. We need to **join** them! 🙌
 
