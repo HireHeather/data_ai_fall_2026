@@ -47,9 +47,14 @@ Pick a tool you want more practice with. You can go deeper on one we've already 
 
 ### My Video Lessons
 
-- [ ] _Add your video here_
-- [ ] _Add your video here_
-- [ ] _Add your video here_
+- [ ] [Power BI Alex the Analyst](https://www.youtube.com/watch?v=I0vQ_VLZTWg)
+- [ ] [Power BI Complete Course 2026](https://www.youtube.com/watch?v=cyWVzAQF9YU)
+- Topic	Start time	What you'll learn
+- Data relationships	[1:05:32](https://www.youtube.com/watch?v=cyWVzAQF9YU&t=3932s)	Connect multiple datasets
+- DAX calculations	[7:18:30](https://www.youtube.com/watch?v=cyWVzAQF9YU&t=26310s)Create calculated measures
+- Interactive filters	[5:43:04](https://www.youtube.com/watch?v=cyWVzAQF9YU&t=20584s)	Add dashboard slicers
+- Power Query	[15:50:38](https://www.youtube.com/watch?v=cyWVzAQF9YU&t=57038s)	Clean and transform data
+- Publishing	[19:11:38](https://www.youtube.com/watch?v=cyWVzAQF9YU&t=69098s)	Publish a completed report
 
 ---
 
