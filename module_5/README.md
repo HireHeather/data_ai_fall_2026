@@ -35,8 +35,8 @@ _Watch the videos below, edit the markdown file with an x in the checkbox when c
 
 _Estimated total time to complete: 1 hour_
 
-- [x ] Watch [this](https://youtu.be/AaiPFcBDgtk?si=e9VhNCEiZauixPNh&t=1) video and mark when complete
-- [x] Follow along in [Google Looker Data Studio](https://lookerstudio.google.com/) to create your first Looker Dashboard
+- [ ] Watch [this](https://youtu.be/AaiPFcBDgtk?si=e9VhNCEiZauixPNh&t=1) video and mark when complete
+- [ ] Follow along in [Google Looker Data Studio](https://lookerstudio.google.com/) to create your first Looker Dashboard
 
 ---
 
@@ -47,7 +47,10 @@ _Estimated total time to complete: 4 hours_
 - [x ] Watch [this](https://www.youtube.com/watch?v=dsAVSsdYC10&t=1s) video and mark when complete
 - [x ] Follow along in Google Looker Data Studio to create a Looker Dashboard
 - [x ] You can use the data provided in the video OR choose a data set that interests you from [Kaggle](https://www.kaggle.com/datasets) to analyze/visualize.
-- [ ] Drop your completed dashboard in [this discussion]() thread.
+- [x ] Drop your completed dashboard in [this discussion]() thread.
+- [x ] Watch [this](https://www.youtube.com/watch?v=dsAVSsdYC10&t=1s) video and mark when complete
+- [x ] Follow along in Google Looker Data Studio to create a Looker Dashboard
+- [x ] You can use the data provided in the video OR choose a data set that interests you from [Kaggle](https://www.kaggle.com/datasets) to analyze/visualize.
 
 ---
 
@@ -57,6 +60,9 @@ _Estimated total time to complete: 4 hours_
 
 _Estimated time to complete: 1.5 hours_
 
+- [x ] Watch video [Best Stats You've Ever Seen](https://www.youtube.com/watch?v=hVimVzgtD6w)
+- [x ] Watch video [How to Turn Data into Stories](https://www.youtube.com/watch?v=Hfx1X9WSGYQ&pp=ygUbZGF0YSBzdG9yeXRlbGxpbmcgdGVkIHRhbGsg)
+- [x ] Watch Kelsey's video - [Mothers in the Workforce](https://www.youtube.com/watch?v=llddQPmYU40)
 - [x ] Watch video [Best Stats You've Ever Seen](https://www.youtube.com/watch?v=hVimVzgtD6w)
 - [x ] Watch video [How to Turn Data into Stories](https://www.youtube.com/watch?v=Hfx1X9WSGYQ&pp=ygUbZGF0YSBzdG9yeXRlbGxpbmcgdGVkIHRhbGsg)
 - [x ] Watch Kelsey's video - [Mothers in the Workforce](https://www.youtube.com/watch?v=llddQPmYU40)
