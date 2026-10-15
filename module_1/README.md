@@ -32,10 +32,10 @@ Join [Leland AI Builder Foundations](https://courses.joinleland.com/ai-builder/f
 
 Explore the different output types AI can create — from documents and spreadsheets to visualizations and images.
 
-- [ ] Create documents, spreadsheets, and presentations with AI
-- [ ] Create interactive visualizations and artifacts with AI
-- [ ] Create images with AI
-- [ ] Explore more types of AI output
+- [ ✔️] Create documents, spreadsheets, and presentations with AI
+- [✔️ ] Create interactive visualizations and artifacts with AI
+- [✔️] Create images with AI
+- [✔️] Explore more types of AI output
 
 ---
 
@@ -107,7 +107,7 @@ Pick the right model for each job and budget your AI spend with intent.
 
 ## Additional Assignments: 
 
-- [ ] Post your AI Builder Certificate in the discussion here: https://github.com/Tech-Moms/data_ai_fall_2026/discussions/6
+- [ ✔️] Post your AI Builder Certificate in the discussion here: https://github.com/Tech-Moms/data_ai_fall_2026/discussions/6
 - [ ] Review the Data Analytics Resource repository
 - [ ] Add teachers & fellow students on linkedin
 - [ ] Continue editing your Claude Artifact from Saturday's class via prompts or VSCode and Publish on GitHub as a GitHub page (ask AI for help as needed!)
