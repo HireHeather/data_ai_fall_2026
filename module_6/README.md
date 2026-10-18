@@ -10,8 +10,8 @@ This week is "Choose Your Adventure" week, where you go deeper on a topic of you
 
 Pick an area you're interested in. You'll do an analysis using **your own data** or a dataset from [Kaggle](https://www.kaggle.com/datasets) (or anywhere else you can find data).
 
-- [x] I've picked my topic
-- [x] I've found my dataset
+- [ ] I've picked my topic: Online Student Retention
+- [ ] I've found my [dataset](https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset)
 
 > 💡 Pick a topic you care about. It's much easier to stay motivated (and tell a good story) with data you find interesting.
 
@@ -36,26 +36,28 @@ Pick a tool you want more practice with. You can go deeper on one we've already 
 - **Python or R:** try your hand at coding if you're interested!
 - **A platform specific to your industry:** research the tools people in your field use to track data. For example, if you work in events, find the platform event planners use to track registrations and attendance, and use it for your analysis.
 
-- [x] I've picked my tool
+- [ ] I've picked my tool:
+**SQL and Python in Deepnote + Tableau Public**
+Ticket: "Too many students are withdrawing or failing before they finish a course. I need to know which courses and student groups are most at risk, and whether we can spot struggling students early, in the first few weeks. Give me a dashboard and your top 3 recommendations by Friday."
 
 ---
 
 ## Step 3: Video Lessons
 
-- [x] Curate the videos you watched for your topic of choice and add them here under "Video Lessons."
+- [ ] Curate the videos you watched for your topic of choice and add them here under "Video Lessons."
 - [ ] Ideas for videos: Alex the Analyst videos on advanced Excel topics, intermediate SQL, or intro to Python from his [Data Analytics Bootcamp](https://www.youtube.com/watch?v=PSNXoAs2FtQ) series.
 
 ### My Video Lessons
 
-- [ ] Udemy Google SHeets Course 
-- [ ] Several more than 3 - see doc with details 
+- [ ] _Add your video here_
+- [ ] _Add your video here_
 - [ ] _Add your video here_
 
 ---
 
 ## Step 4: Assignment - Due by class Saturday, October 17th
 
-- [x] Analyze your dataset in your chosen tool, using what you learned in your video lessons.
-- [x] Add your completed project to [this discussion](https://github.com/Tech-Moms/data_ai_fall_2026/discussions/82). Include your topic, your tool, and a link to your work.
-- [x] Check out last semester's Choose Your Adventure projects [here](https://github.com/Tech-Moms/data-analytics-winter-2025/discussions/197).
-- [x] Celebrate! Learning how to learn is an important part of learning! 🎉
+- [ ] Analyze your dataset in your chosen tool, using what you learned in your video lessons.
+- [ ] Add your completed project to [this discussion](https://github.com/Tech-Moms/data_ai_fall_2026/discussions/82). Include your topic, your tool, and a link to your work.
+- [ ] Check out last semester's Choose Your Adventure projects [here](https://github.com/Tech-Moms/data-analytics-winter-2025/discussions/197).
+- [ ] Celebrate! Learning how to learn is an important part of learning! 🎉
