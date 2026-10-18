@@ -38,7 +38,7 @@ _Est. Time to Complete: 5 mins_
 
 In SQL, the `SELECT` and `FROM` statements are fundamental for retrieving data from a database. The `SELECT` statement specifies the columns you want to retrieve, while the `FROM` statement indicates the table where the data is stored. For example, `SELECT name, age FROM users;` retrieves the "name" and "age" columns from the "users" table. These commands allow users to filter and view specific data, making them essential for data querying and analysis in SQL.
 
-- [x] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=jGa997jsmCZBWjog&t=1484) video and mark when complete
+- [X] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=jGa997jsmCZBWjog&t=1484) video and mark when complete
 
 ----
 
@@ -60,7 +60,7 @@ In SQL, the `GROUP BY` and `ORDER BY` clauses are used to organize and sort data
 
 The `ORDER BY` clause sorts the query results based on specified columns, either in ascending (`ASC`) or descending (`DESC`) order. For example, `ORDER BY salary DESC` will sort the results by salary from highest to lowest. These clauses help in organizing data for clearer insights and analysis.
 
-- [x ] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=vu1ueCAeZ9jVLMhT&t=2334) video and mark when complete
+- [x] Watch [this](https://youtu.be/PSNXoAs2FtQ?si=vu1ueCAeZ9jVLMhT&t=2334) video and mark when complete
 
 ## Optional: Intermediate SQL Video Tutorials 
 
