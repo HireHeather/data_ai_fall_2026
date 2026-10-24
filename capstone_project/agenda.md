@@ -11,7 +11,7 @@ pw: stargazer
 ## 🎤 Hour 1: Guest Speaker
 - Career journey and how they present data to stakeholders
 - Q&A
-- ✍️ Write down **one takeaway** you'll use in your capstone
+- ✍️ Write down **one takeaway** 
 
 ## 🔍 Hour 2: Breakout: Data Story Sprint
 - Small groups research a question using stats from **3 different news sources**
