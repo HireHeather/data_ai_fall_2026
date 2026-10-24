@@ -19,7 +19,7 @@ pw: stargazer
 - 📄 See `data_story_sprint.md` for full instructions
 
 ## 🥗 Hour 3: Lunch
-- Optional **capstone table talk**: sit with someone whose topic is different from yours
+- Jersey Mike's! Thanks Porch & Amanda!
 
 ## 🛠️ Hour 4: Capstone Work Time
 - **10 min:** 90-second capstone pitches in pairs 🗣️
