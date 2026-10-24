@@ -1,5 +1,9 @@
 # 📊 Capstone Month: In-Person Class Agenda
 
+Wifi: porch-guest
+
+pw: stargazer
+
 **Focus:** Turning data into a story 📖
 
 ---
