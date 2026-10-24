@@ -4,7 +4,7 @@ Wifi: porch-guest
 
 pw: stargazer
 
-**Focus:** Turning data into a story 📖
+**Focus:** Thinking like an analyst & turning data into a story 📖
 
 ---
 
